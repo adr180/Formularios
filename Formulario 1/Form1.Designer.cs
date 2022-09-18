@@ -123,11 +123,11 @@
 
         #endregion
         private Button button1;
-        private Button button2;
         private TextBox textBox1;
-        private TextBox textBox2;
         private Button button3;
         private Label label1;
         private Label label2;
+        public TextBox textBox2;
+        public Button button2;
     }
 }

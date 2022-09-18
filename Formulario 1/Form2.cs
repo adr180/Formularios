@@ -12,11 +12,17 @@ namespace Formulario_1
 {
     public partial class Form2 : Form
     {
-        
-        public Form2(string v)
-        {
-            InitializeComponent();
-            textBox1.Text = v;   
+        // fp sendo declarado fora do contrutor, para que seja possivel acessar em qualquer construtor
+
+        Form1 fp;
+        public Form2(string v,Form1 txt) //'v' recebe dos dados de textbox2.txt de Form1
+        {                                //'txt' conseguimos acessar Todos os componentes de Form1
+                                         //os componentes por padrão são private, em propriedades colocar public
+            InitializeComponent();       //para que sejam acessiveis por outros fomularios diferentes.
+            textBox1.Text = v; // coloca os dados de 'v' em textbox1 no formulario atual
+            fp = txt;
+            
+            
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -26,7 +32,14 @@ namespace Formulario_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Close();
+            Close();           
+        }
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            fp.textBox2.Text = textBox1.Text;
+            // com fp conseguimos acessar todos os componentes de Form1 
+            
         }
     }
 }
