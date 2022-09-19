@@ -16,3 +16,4 @@ C:\Users\Adriano\source\repos\Formulario 1\Formulario 1\obj\Debug\net6.0-windows
 C:\Users\Adriano\source\repos\Formulario 1\Formulario 1\obj\Debug\net6.0-windows\Formulario 1.genruntimeconfig.cache
 C:\Users\Adriano\source\repos\Formulario 1\Formulario 1\obj\Debug\net6.0-windows\ref\Formulario 1.dll
 C:\Users\Adriano\source\repos\Formulario 1\Formulario 1\obj\Debug\net6.0-windows\Formulario_1.Form2.resources
+C:\Users\Adriano\source\repos\Formulario 1\Formulario 1\obj\Debug\net6.0-windows\Formulario_1.Form3.resources

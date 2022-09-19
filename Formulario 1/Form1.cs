@@ -4,6 +4,9 @@ namespace Formulario_1
 {
     public partial class Form1 : Form
     {
+
+        
+        public Form3 frm3;
         public Form1()
         {
             InitializeComponent();
@@ -31,6 +34,27 @@ namespace Formulario_1
             textBox1.Clear();
             textBox2.Clear();
             textBox1.Focus();
+        }
+
+        private void componentesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        Form3 form = new Form3(); // instancia fora para que possa ser acessado em todos os metodos e contrutores
+        private void checkBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // aqui consigo repassar dados de Form1 para Form3
+            form.label3.Text = "vai";
+            form.radioButton1.Checked = true;
+            form.checkBox3.Checked = true;
+            form.ShowDialog();            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            form.ShowDialog();
+            
         }
     }
 }
